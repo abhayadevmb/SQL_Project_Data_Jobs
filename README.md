@@ -45,8 +45,6 @@ ORDER BY
 LIMIT 10
 ```
 
-**Visualization**: A horizontal bar chart showing salary ranges for the top 10 positions, color-coded by company, helps visualize compensation disparities across employers.
-
 ### 2. **Skills Required for High-Paying Roles**
 
 Analyzed what skills command the highest salaries. By joining job postings with their associated skill requirements, I mapped the technical and soft skills that appear most frequently in top-paying positions.
@@ -81,8 +79,6 @@ ORDER BY
     salary_year_avg DESC
 ```
 
-**Visualization**: A skill frequency table or bubble chart where bubble size represents salary level, revealing which skills cluster in the highest-paying positions.
-
 ### 3. **Most In-Demand Skills**
 
 Determined which skills employers request most often, providing insight into market priorities and hiring trends. This helps job seekers identify skills that increase employability regardless of salary.
@@ -99,8 +95,6 @@ GROUP BY skills
 ORDER BY demand_count DESC
 LIMIT 5
 ```
-
-**Visualization**: A bar chart showing the top 5 most-demanded skills with their request frequency, making it easy to spot market favorites at a glance.
 
 ### 4. **Top Paying Skills by Average Salary**
 
@@ -119,8 +113,6 @@ GROUP BY skills
 ORDER BY avg_salary DESC
 LIMIT 25
 ```
-
-**Visualization**: A vertical bar chart ranked by average salary, color-coded by skill category (SQL/Databases, Python/Programming, Visualization, Cloud) to reveal which domains command premium compensation.
 
 ### 5. **Optimal Skills to Learn**
 
@@ -147,8 +139,6 @@ ORDER BY
     avg_salary DESC,
     demand_count DESC
 ```
-
-**Visualization**: A scatter plot with demand count on the X-axis and average salary on the Y-axis, creating quadrants to identify "high demand + high pay" skills (top right) versus niche or low-demand skills. This visualization highlights the optimal ROI skills for career investment.
 
 ## What I Learned
 
